@@ -70,9 +70,7 @@ if (isset($_SESSION['carrito'])) {
                 </span>
                 <?php endif; ?>
               </a>
-              <form class="form-inline">
-                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+             
             </div>
           </div>
         </nav>
