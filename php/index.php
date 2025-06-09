@@ -409,17 +409,17 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
               Enlaces </h5>
             <ul>
               <li class="active">
-                <a href="index.html">
+                <a href="../index.html">
                   Inicio
                 </a>
               </li>
               <li>
-                <a href="about.html">
+                <a href="../about.html">
                   Nosotros
                 </a>
               </li>
               <li>
-                <a href="gallery.html">
+                <a href="../gallery.html">
                   Galeria
                 </a>
               </li>
