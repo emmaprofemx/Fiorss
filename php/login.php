@@ -1,27 +1,26 @@
 <?php
-session_start(); // Si quieres usar sesiones para mantener la sesión activa
+session_start(); // Para sesiones
 
-require 'database.php';
+require 'database.php'; // Este archivo define $conexion
 
 $email = $_POST['email'] ?? '';
-$password = $_POST['pass'] ?? '';
+$password = $_POST['password'] ?? '';
 $error = null;
 
 if ($email && $password) {
     $sql = "SELECT * FROM clientes WHERE email = ?";
-    $stmt = $conn->prepare($sql);
+    $stmt = $conexion->prepare($sql); // Usamos $conexion como en database.php
     $stmt->bind_param("s", $email);
-    
+
     if ($stmt->execute()) {
         $resultado = $stmt->get_result();
         if ($resultado->num_rows === 1) {
             $usuario = $resultado->fetch_assoc();
-            
-            // Verificación simple (sin password hash)
-            if ($usuario['pass'] === $password) {
-                // Guardar en sesión (opcional)
+
+            // Comparación simple de contraseña (sin hash)
+            if ($usuario['password'] === $password) {
                 $_SESSION['usuario'] = $usuario;
-                header("Location: mostrarClientes.php");
+                header("Location: ../index.html");
                 exit();
             } else {
                 $error = "Contraseña incorrecta.";
@@ -31,16 +30,15 @@ if ($email && $password) {
         }
     } else {
         $error = "Error al ejecutar la consulta.";
-}
+    }
 
     $stmt->close();
 } else {
     $error = "Por favor, rellena todos los campos.";
 }
 
-$conn->close();
+$conexion->close();
 
-// Si hay error, redirigir o mostrar alerta (puedes mejorarlo con JS o feedback en la misma página de login)
 if ($error) {
     echo "<script>alert('$error'); window.location.href='index.html';</script>";
     exit();

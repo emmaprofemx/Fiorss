@@ -23,8 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $conexion->prepare($sql);
 
             if ($stmt) {
-                $password_hash = password_hash($password_recibido, PASSWORD_DEFAULT);
-                $stmt->bind_param("ssssss", $nombre, $apellidoP, $apellidoM, $email, $password_hash, $estado);
+                // Ya no se encripta la contraseña, se guarda tal cual
+                $stmt->bind_param("ssssss", $nombre, $apellidoP, $apellidoM, $email, $password_recibido, $estado);
 
                 if ($stmt->execute()) {
                     $response['success'] = true;
