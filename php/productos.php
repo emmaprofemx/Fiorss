@@ -70,7 +70,6 @@ if (isset($_SESSION['carrito'])) {
                 </span>
                 <?php endif; ?>
               </a>
-             
             </div>
           </div>
         </nav>

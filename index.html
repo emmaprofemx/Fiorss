@@ -336,15 +336,49 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto">
-          <form action="php/guardar_contacto.php" method="POST" novalidate>
-            <input type="text" name="nombre" placeholder="Nombre Completo" required />
-            <input type="email" name="correo" placeholder="Correo" required />
-            <input type="text" name="telefono" placeholder="Teléfono" required />
-            <div><input type="text" name="mensaje" class="message-box" placeholder="Mensaje (opcional)" /></div>
-            <div class="d-flex mt-4">
-              <button type="submit">Enviar</button>
-            </div>
-          </form>
+         <form id="formContacto" action="php/guardar_contacto.php" method="POST" novalidate>
+  <div>
+    <input type="text" name="nombre" placeholder="Nombre Completo" />
+  </div>
+  <div>
+    <input type="email" name="correo" placeholder="Correo" />
+  </div>
+  <div>
+    <input type="text" name="telefono" placeholder="Teléfono" />
+  </div>
+  <div>
+    <input type="text" name="mensaje" class="message-box" placeholder="Mensaje (opcional)" />
+  </div>
+  <div class="d-flex mt-4">
+    <button type="submit">Enviar</button>
+  </div>
+</form>
+
+<script>
+  document.getElementById('formContacto').addEventListener('submit', function(e) {
+    e.preventDefault(); // evita que se recargue la página
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+      alert(data.message); // muestra el mensaje del servidor
+      if (data.success) {
+        form.reset(); // limpia el formulario si fue exitoso
+      }
+    })
+    .catch(err => {
+      alert("Error al enviar el formulario.");
+      console.error(err);
+    });
+  });
+</script>
+
         </div>
       </div>
     </div>
