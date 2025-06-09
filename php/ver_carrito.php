@@ -53,8 +53,30 @@ $carrito = $_SESSION['carrito'] ?? [];
 
       <div class="d-flex justify-content-between mt-3">
         <button type="submit" class="btn btn-primary">Actualizar cantidades</button>
-        <a href="realizar_pedido.php" class="btn btn-success">Realizar pedido</a>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#pedidoRealizadoModal">
+          Realizar pedido
+        </button>
       </div>
     </form>
   <?php endif; ?>
 </div>
+
+<div class="modal fade" id="pedidoRealizadoModal" tabindex="-1" aria-labelledby="pedidoRealizadoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="pedidoRealizadoModalLabel">✅ Pedido realizado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        ¡Tu pedido ha sido registrado con éxito! 🎉<br>
+        Gracias por tu compra.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
