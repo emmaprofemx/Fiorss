@@ -92,10 +92,10 @@ if (isset($_SESSION['carrito'])) {
       <div class="row mt-4">
         <?php
        $productos = [
-  1 => ['nombre' => 'Nombre del Producto', 'precio_original' => 120.00, 'precio' => 99.00, 'imagen' => '../images/producto1.webp'],
-  2 => ['nombre' => 'Producto sin descuento', 'precio' => 80.00, 'imagen' => '../images/producto2.webp'],
-  3 => ['nombre' => 'Producto sin descuento', 'precio' => 80.00, 'imagen' => '../images/producto3.webp'],
-  4 => ['nombre' => 'Nombre del Producto', 'precio_original' => 120.00, 'precio' => 99.00, 'imagen' => '../images/producto4.webp']
+  1 => ['nombre' => 'Arreglo Floral Aniversario', 'precio_original' => 120.00, 'precio' => 99.00, 'imagen' => '../images/producto1.webp'],
+  2 => ['nombre' => 'Astromelias Rosadas', 'precio' => 80.00, 'imagen' => '../images/producto2.webp'],
+  3 => ['nombre' => 'Flores Primavera', 'precio' => 80.00, 'imagen' => '../images/producto3.webp'],
+  4 => ['nombre' => 'Ramo Especial', 'precio_original' => 120.00, 'precio' => 99.00, 'imagen' => '../images/producto4.webp']
 ];
 
         foreach ($productos as $id => $producto):
