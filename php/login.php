@@ -18,7 +18,7 @@ if ($email && $password) {
             $usuario = $resultado->fetch_assoc();
             if ($usuario['password'] === $password) {
                 $_SESSION['usuario'] = $usuario;
-                header("Location: ../index.html");
+                header("Location: ../php/index.php");
                 exit();
             } else {
                 $error = "Contraseña incorrecta.";
