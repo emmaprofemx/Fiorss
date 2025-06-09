@@ -1,8 +1,8 @@
 <?php
 // Solo conexión, sin lógica adicional
 $db_host = '127.0.0.1';
-$db_port = 3307;
-//$db_port = 3306;
+//$db_port = 3307;
+$db_port = 3306;
 $db_username = 'root';
 $db_password = '';
 $db_name = 'fior_trn';
