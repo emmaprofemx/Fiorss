@@ -83,11 +83,12 @@ if (isset($_SESSION['carrito'])) {
     <div class="container">
       <div class="heading_container justify-content-center">
         <h2>Productos</h2>
-        <?php if (isset($_GET['agregado'])): ?>
-        <div class="alert alert-success text-center">
-          Producto agregado correctamente al carrito 🛒
-        </div>
-        <?php endif; ?>
+        <?php if (isset($_SESSION['producto_agregado'])): ?>
+<div class="alert alert-success text-center">
+  Producto agregado correctamente al carrito 🛒
+</div>
+<?php unset($_SESSION['producto_agregado']); endif; ?>
+
       </div>
       <div class="row mt-4">
         <?php
