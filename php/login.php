@@ -4,7 +4,7 @@ session_start(); // Para sesiones
 require 'database.php'; // Este archivo define $conexion
 
 $email = $_POST['email'] ?? '';
-$password = $_POST['password'] ?? '';
+$password = $_POST['pass'] ?? '';
 $error = null;
 
 if ($email && $password) {
@@ -16,8 +16,6 @@ if ($email && $password) {
         $resultado = $stmt->get_result();
         if ($resultado->num_rows === 1) {
             $usuario = $resultado->fetch_assoc();
-
-            // Comparación simple de contraseña (sin hash)
             if ($usuario['password'] === $password) {
                 $_SESSION['usuario'] = $usuario;
                 header("Location: ../index.html");
