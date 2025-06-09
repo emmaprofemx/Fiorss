@@ -64,7 +64,7 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
                   <a class="nav-link" href="gallery.html"> Galeria </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="php/productos.php">Productos</a>
+                  <a class="nav-link" href="productos.php">Productos</a>
                 </li>
               </ul>
             </div>
@@ -424,7 +424,7 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
                 </a>
               </li>
               <li>
-                <a href="../php/productos.php">
+                <a href="productos.php">
                   Productos
                 </a>
               </li>
