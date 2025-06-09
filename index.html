@@ -70,9 +70,7 @@
               <a href="">
                 <img src="images/cart.png" alt="">
               </a>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+              
             </div>
           </div>
         </nav>
@@ -267,7 +265,11 @@
               <h5>
                 Estevan Martínez
               </h5>
-              <p>¡Simplemente espectacular! Pedí un arreglo para el aniversario de mis padres y superó todas mis expectativas. No era el típico ramo que encuentras en cualquier lado; se notaba el arte y la dedicación en cada detalle. Las flores estaban increíblemente frescas y perfumaron su casa por más de una semana. ¡La atención fue de primera y me ayudaron a elegir la opción perfecta! Sin duda, mi nueva florería de confianza </p>
+              <p>¡Simplemente espectacular! Pedí un arreglo para el aniversario de mis padres y superó todas mis
+                expectativas. No era el típico ramo que encuentras en cualquier lado; se notaba el arte y la dedicación
+                en cada detalle. Las flores estaban increíblemente frescas y perfumaron su casa por más de una semana.
+                ¡La atención fue de primera y me ayudaron a elegir la opción perfecta! Sin duda, mi nueva florería de
+                confianza </p>
             </div>
           </div>
         </div>
@@ -280,7 +282,11 @@
               <h5>
                 Alejandro Garza
               </h5>
-              <p>Necesitaba varios centros de mesa para un evento de empresa y el servicio fue impecable de principio a fin. El equipo entendió perfectamente nuestra necesidad de un estilo elegante y profesional. La entrega fue extremadamente puntual y la calidad de las flores fue excepcional, recibimos muchos cumplidos de nuestros socios. Nos hicieron quedar muy bien. Totalmente recomendados por su profesionalismo y confianza. </p>
+              <p>Necesitaba varios centros de mesa para un evento de empresa y el servicio fue impecable de principio a
+                fin. El equipo entendió perfectamente nuestra necesidad de un estilo elegante y profesional. La entrega
+                fue extremadamente puntual y la calidad de las flores fue excepcional, recibimos muchos cumplidos de
+                nuestros socios. Nos hicieron quedar muy bien. Totalmente recomendados por su profesionalismo y
+                confianza. </p>
             </div>
           </div>
         </div>
@@ -298,9 +304,12 @@
     <div class="container">
       <div class="detail_box">
         <h2>
-Tu Emoción en las Mejores Manos        </h2>
+          Tu Emoción en las Mejores Manos </h2>
         <p>
-          En FiorFlores, entendemos que no solo estás comprando flores; estás enviando un sentimiento. Por eso, cada ramo es una promesa: una promesa de frescura excepcional, diseño artístico y entrega puntual. Ponemos nuestra pasión y experiencia en cada detalle para asegurar que tu mensaje llegue al corazón, intacto y lleno de belleza. Confía en nosotros para convertir tu ocasión especial en un momento inolvidable.
+          En FiorFlores, entendemos que no solo estás comprando flores; estás enviando un sentimiento. Por eso, cada
+          ramo es una promesa: una promesa de frescura excepcional, diseño artístico y entrega puntual. Ponemos nuestra
+          pasión y experiencia en cada detalle para asegurar que tu mensaje llegue al corazón, intacto y lleno de
+          belleza. Confía en nosotros para convertir tu ocasión especial en un momento inolvidable.
         </p>
       </div>
     </div>
@@ -327,10 +336,10 @@ Tu Emoción en las Mejores Manos        </h2>
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto">
-          <form id="registrationForm" action="php/contact_process.php" method="POST" novalidate>
-            <div><input type="text" name="nombre" placeholder="Nombre Completo" /></div>
-            <div><input type="email" name="correo" placeholder="Correo"  /></div>
-            <div><input type="text" name="telefono" placeholder="Teléfono"  /></div>
+          <form action="php/guardar_contacto.php" method="POST" novalidate>
+            <input type="text" name="nombre" placeholder="Nombre Completo" required />
+            <input type="email" name="correo" placeholder="Correo" required />
+            <input type="text" name="telefono" placeholder="Teléfono" required />
             <div><input type="text" name="mensaje" class="message-box" placeholder="Mensaje (opcional)" /></div>
             <div class="d-flex mt-4">
               <button type="submit">Enviar</button>
@@ -355,7 +364,7 @@ Tu Emoción en las Mejores Manos        </h2>
         <div class="col-md-3">
           <div class="info_links pl-lg-5">
             <h5>
-Enlaces            </h5>
+              Enlaces </h5>
             <ul>
               <li class="active">
                 <a href="index.html">
@@ -373,7 +382,7 @@ Enlaces            </h5>
                 </a>
               </li>
               <li>
-                <a   href="php/productos.php">
+                <a href="php/productos.php">
                   Productos
                 </a>
               </li>
@@ -426,30 +435,30 @@ Enlaces            </h5>
           </div>
         </div>
         <div class="col-md-3">
-  <div class="info_contact">
-    <h5>
-      Contacto
-    </h5>
-    <div>
-      <img src="images/location-white.png" alt="Ubicación">
-      <p>
-       Av. Té 950, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX
-      </p>
-    </div>
-    <div>
-      <img src="images/telephone-white.png" alt="Teléfono">
-      <p>
-        +52 (55) 214 5588
-      </p>
-    </div>
-    <div>
-      <img src="images/envelope-white.png" alt="Correo electrónico">
-      <p>
-        contacto@fiorflores.com
-      </p>
-    </div>
-  </div>
-</div>
+          <div class="info_contact">
+            <h5>
+              Contacto
+            </h5>
+            <div>
+              <img src="images/location-white.png" alt="Ubicación">
+              <p>
+                Av. Té 950, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX
+              </p>
+            </div>
+            <div>
+              <img src="images/telephone-white.png" alt="Teléfono">
+              <p>
+                +52 (55) 214 5588
+              </p>
+            </div>
+            <div>
+              <img src="images/envelope-white.png" alt="Correo electrónico">
+              <p>
+                contacto@fiorflores.com
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -458,7 +467,7 @@ Enlaces            </h5>
 
   <!-- footer section -->
   <footer class="container-fluid footer_section">
-    
+
   </footer>
   <!-- footer section -->
 
