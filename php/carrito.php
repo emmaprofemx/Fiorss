@@ -10,7 +10,6 @@ if ($id) {
     if (isset($_SESSION['carrito'][$id])) {
         $_SESSION['carrito'][$id]['cantidad'] += 1;
     } else {
-        // Productos "quemados" en el código
         $productos = [
             1 => ['nombre' => 'Nombre del Producto', 'precio' => 99.00, 'imagen' => 'images/producto1.webp'],
             2 => ['nombre' => 'Producto sin descuento', 'precio' => 80.00, 'imagen' => 'images/producto2.webp'],

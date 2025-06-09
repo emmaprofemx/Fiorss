@@ -137,7 +137,6 @@ if (isset($_SESSION['carrito'])) {
             <h5>
               Fior
             </h5>
-           
           </div>
         </div>
         <div class="col-md-3">
@@ -178,36 +177,36 @@ if (isset($_SESSION['carrito'])) {
               <div>
                 <a href="">
                   <div class="insta-box b-1">
-                    <img src="images/insta-1.png" alt="">
+                    <img src="../images/insta-1.png" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-2">
-                    <img src="images/insta-2.png" alt="">
+                    <img src="../images/insta-2.png" alt="">
                   </div>
                 </a>
               </div>
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/insta-3.png" alt="">
+                    <img src="../images/insta-3.png" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/insta-4.png" alt="">
+                    <img src="../images/insta-4.png" alt="">
                   </div>
                 </a>
               </div>
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/insta-5.png" alt="">
+                    <img src="../images/insta-5.png" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/insta-6.png" alt="">
+                    <img src="../images/insta-6.png" alt="">
                   </div>
                 </a>
               </div>
