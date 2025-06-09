@@ -26,8 +26,8 @@ form.addEventListener('submit', function (event) {
 
     if (isFormValid) {
         console.log('Formulario válido. Enviando datos...');
-        alert('¡Registro exitoso!'); // Opcional
-        form.submit(); // 👈 Esto permite enviar el formulario realmente
+        alert('¡Registro exitoso!'); 
+        form.submit(); 
     } else {
         console.log('Formulario inválido. Por favor, corrige los errores.');
     }
