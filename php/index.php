@@ -424,7 +424,7 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
                 </a>
               </li>
               <li>
-                <a href="php/productos.php">
+                <a href="../php/productos.php">
                   Productos
                 </a>
               </li>
@@ -482,19 +482,19 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
               Contacto
             </h5>
             <div>
-              <img src="images/location-white.png" alt="Ubicación">
+              <img src="../images/location-white.png" alt="Ubicación">
               <p>
                 Av. Té 950, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX
               </p>
             </div>
             <div>
-              <img src="images/telephone-white.png" alt="Teléfono">
+              <img src="../images/telephone-white.png" alt="Teléfono">
               <p>
                 +52 (55) 214 5588
               </p>
             </div>
             <div>
-              <img src="images/envelope-white.png" alt="Correo electrónico">
+              <img src="../images/envelope-white.png" alt="Correo electrónico">
               <p>
                 contacto@fiorflores.com
               </p>
