@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="css/style_registration.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/aviso.css" />
+</head>
+
+<body>
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registro</h3>
+<form id="registrationForm" action="php/database.php" method="POST" novalidate>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+                <input type="text" id="nombreCliente" name="nombreCliente" class="form-control form-control-lg" required />
+                <label class="form-label" for="nombreCliente">Nombre(s)</label>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+                <input type="text" id="apellidoPCliente" name="apellidoPCliente" class="form-control form-control-lg" required />
+                <label class="form-label" for="apellidoPCliente">Apellido Paterno</label>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repite para los demás campos -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+                <input type="text" id="apellidoMCliente" name="apellidoMCliente" class="form-control form-control-lg" required />
+                <label class="form-label" for="apellidoMCliente">Apellido Materno</label>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+                <input type="email" id="emailCliente" name="emailCliente" class="form-control form-control-lg" required />
+                <label class="form-label" for="emailCliente">Correo Electronico</label>
+                <div class="invalid-feedback">Por favor, introduce un correo válido.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+                <input type="password" id="passwordCliente" name="passwordCliente" class="form-control form-control-lg" required />
+                <label class="form-label" for="passwordCliente">Contraseña</label>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+                <input type="password" id="confirmarPassCliente" name="confirmarPassCliente" class="form-control form-control-lg" required />
+                <label class="form-label" for="confirmarPassCliente">Confirmar Contraseña</label>
+                <div id="passwordError" class="invalid-feedback">Las contraseñas no coinciden.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <select id="estado" name="estado" class="select form-control-lg" required>
+                <option value="" disabled selected>Selecciona un estado</option>
+                <option value="AGU">Aguascalientes</option>
+                <option value="BCN">Baja California</option>
+                <option value="BCS">Baja California Sur</option>
+                <option value="CAM">Campeche</option>
+                <option value="CHP">Chiapas</option>
+                <option value="CHH">Chihuahua</option>
+                <option value="COA">Coahuila</option>
+                <option value="COL">Colima</option>
+                <option value="CDMX">Ciudad de México</option>
+                <option value="DUR">Durango</option>
+                <option value="GUA">Guanajuato</option>
+                <option value="GRO">Guerrero</option>
+                <option value="HID">Hidalgo</option>
+                <option value="JAL">Jalisco</option>
+                <option value="MEX">Estado de México</option>
+                <option value="MIC">Michoacán</option>
+                <option value="MOR">Morelos</option>
+                <option value="NAY">Nayarit</option>
+                <option value="NLE">Nuevo León</option>
+                <option value="OAX">Oaxaca</option>
+                <option value="PUE">Puebla</option>
+                <option value="QUE">Querétaro</option>
+                <option value="ROO">Quintana Roo</option>
+                <option value="SLP">San Luis Potosí</option>
+                <option value="SIN">Sinaloa</option>
+                <option value="SON">Sonora</option>
+                <option value="TAB">Tabasco</option>
+                <option value="TAM">Tamaulipas</option>
+                <option value="TLA">Tlaxcala</option>
+                <option value="VER">Veracruz</option>
+                <option value="YUC">Yucatán</option>
+                <option value="ZAC">Zacatecas</option>
+            </select>
+            <label class="form-label" for="estado">Estado</label>
+            <div class="invalid-feedback">Debes seleccionar un estado.</div>
+        </div>
+    </div>
+
+    <div class="mt-4 pt-2">
+        <input class="btn btn-primary btn-lg" type="submit" value="Enviar" />
+    </div>
+</form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/validacion_registro.js" defer></script>
+
+</body>
+</html>
