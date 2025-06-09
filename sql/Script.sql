@@ -7,3 +7,5 @@ CREATE TABLE `fior_trn`.`productos` (`id_producto` INT(100) NOT NULL AUTO_INCREM
 CREATE TABLE `fior_dev`.`clientes` (`id_cliente` INT NOT NULL , `nombre` VARCHAR(150) NOT NULL , `apellidoM` VARCHAR(150) NOT NULL , `apellidoP` VARCHAR(150) NOT NULL , `email` VARCHAR(150) NOT NULL , `password` VARCHAR(150) NOT NULL , `estado` VARCHAR(3) NOT NULL ) ENGINE = InnoDB;
 
 CREATE TABLE `fior_trn`.`informacioncontacto` (`id_info` INT(100) NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(150) NOT NULL , `correo` VARCHAR(150) NOT NULL , `telefono` VARCHAR(150) NOT NULL , `mensaje` VARCHAR(220) NULL , PRIMARY KEY (`id_info`)) ENGINE = InnoDB;
+
+CREATE TABLE `fior_trn`. (`id` INT(100) NOT NULL AUTO_INCREMENT , `pedido_id` VARCHAR(150) NOT NULL , `producto_id` VARCHAR(150) NOT NULL , `nombre_producto` VARCHAR(150) NOT NULL , `precio_unitario` DECIMAL(10,2) NOT NULL , `cantidad` INT NOT NULL , `subtotal` DECIMAL(10,2) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

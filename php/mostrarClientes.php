@@ -8,7 +8,7 @@ $error = null;
 try {
     $sql = "SELECT id_cliente, nombre, apellidoP, apellidoM, email, estado FROM clientes";
 
-    $resultado = $conn->query($sql);
+    $resultado = $conexion->query($sql); // Usamos $conexion
 
     if ($resultado->num_rows > 0) {
         while ($fila = $resultado->fetch_assoc()) {
@@ -20,7 +20,7 @@ try {
     $error = "Error al consultar los datos: " . $e->getMessage();
 }
 
-$conn->close();
+$conexion->close(); // Cerramos $conexion
 
 ?>
 <!DOCTYPE html>
@@ -44,19 +44,15 @@ $conn->close();
     <div class="container">
         <h1 class="mb-4 text-center">Listado de Clientes</h1>
 
-        <?php
-
-        if ($error): ?>
+        <?php if ($error): ?>
             <div class="alert alert-danger" role="alert">
                 <?= htmlspecialchars($error) ?>
             </div>
-        <?php
-        elseif (empty($clientes)): ?>
+        <?php elseif (empty($clientes)): ?>
             <div class="alert alert-info" role="alert">
                 No hay clientes registrados en la base de datos.
             </div>
-        <?php
-        else: ?>
+        <?php else: ?>
             <div class="table-responsive">
                 <table class="table table-striped table-bordered table-hover shadow-sm">
                     <thead class="table-dark">
@@ -68,18 +64,12 @@ $conn->close();
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        // 5. Recorremos el arreglo de clientes y creamos una fila <tr> por cada uno.
-                        foreach ($clientes as $cliente): ?>
+                        <?php foreach ($clientes as $cliente): ?>
                             <tr>
                                 <td><?= htmlspecialchars($cliente['id_cliente']) ?></td>
-                                
                                 <td><?= htmlspecialchars($cliente['nombre'] . ' ' . $cliente['apellidoP'] . ' ' . $cliente['apellidoM']) ?></td>
-                                
                                 <td><?= htmlspecialchars($cliente['email']) ?></td>
-                                
                                 <td><?= htmlspecialchars($cliente['estado']) ?></td>
-
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
