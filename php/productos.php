@@ -162,7 +162,7 @@ if (isset($_SESSION['carrito'])) {
                 </a>
               </li>
               <li>
-                <a href="contact.html">
+                <a href="../php/productos.php">
                   Productos
                 </a>
               </li>
