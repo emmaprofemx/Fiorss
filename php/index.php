@@ -76,7 +76,7 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
 <?php endif; ?>
 
               <a href="">
-                <img src="images/cart.png" alt="">
+                <img src="../images/cart.png" alt="">
               </a>
               
             </div>
@@ -216,33 +216,33 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
                 <img src="images/g-1.jpg" alt="">
               </div>
               <div class="img-box">
-                <img src="images/g-4.jpg" alt="">
+                <img src="../images/g-4.jpg" alt="">
               </div>
             </div>
             <div class="b-2">
               <div class="img-box">
-                <img src="images/g-2.jpg" alt="">
+                <img src="../images/g-2.jpg" alt="">
               </div>
               <div class="img-box">
-                <img src="images/g-5.jpg" alt="">
+                <img src="../images/g-5.jpg" alt="">
               </div>
             </div>
           </div>
           <div class="b-3">
             <div class="img-box">
-              <img src="images/g-7.jpg" alt="">
+              <img src="../images/g-7.jpg" alt="">
             </div>
           </div>
         </div>
         <div class="box-2">
           <div class="img-box">
-            <img src="images/g-3.jpg" alt="">
+            <img src="../images/g-3.jpg" alt="">
           </div>
           <div class="img-box">
-            <img src="images/g-6.jpg" alt="">
+            <img src="../images/g-6.jpg" alt="">
           </div>
           <div class="img-box flex-grow-1">
-            <img src="images/g-8.jpg" alt="">
+            <img src="../images/g-8.jpg" alt="">
           </div>
         </div>
       </div>
@@ -268,7 +268,7 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
           <div class="client_box">
             <div class="detail_box">
               <div class="img_box">
-                <img src="images/client-1.png">
+                <img src="../images/client-1.png">
               </div>
               <h5>
                 Estevan Martínez
@@ -285,7 +285,7 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
           <div class="client_box">
             <div class="detail_box">
               <div class="img_box">
-                <img src="images/client-2.png">
+                <img src="../images/client-2.png">
               </div>
               <h5>
                 Alejandro Garza
@@ -344,7 +344,7 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto">
-         <form id="formContacto" action="php/guardar_contacto.php" method="POST" novalidate>
+         <form id="formContacto" action="../php/guardar_contacto.php" method="POST" novalidate>
   <div>
     <input type="text" name="nombre" placeholder="Nombre Completo" />
   </div>
@@ -440,36 +440,36 @@ $nombreUsuario = $_SESSION['usuario']['nombre'] ?? null;
               <div>
                 <a href="">
                   <div class="insta-box b-1">
-                    <img src="images/insta-1.png" alt="">
+                    <img src="../images/insta-1.png" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-2">
-                    <img src="images/insta-2.png" alt="">
+                    <img src="../images/insta-2.png" alt="">
                   </div>
                 </a>
               </div>
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/insta-3.png" alt="">
+                    <img src="../images/insta-3.png" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/insta-4.png" alt="">
+                    <img src="../images/insta-4.png" alt="">
                   </div>
                 </a>
               </div>
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/insta-5.png" alt="">
+                    <img src="../images/insta-5.png" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/insta-6.png" alt="">
+                    <img src="../images/insta-6.png" alt="">
                   </div>
                 </a>
               </div>
